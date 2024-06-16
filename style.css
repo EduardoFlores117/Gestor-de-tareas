@@ -63,9 +63,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background: #ffffff; 
 }
 
-/* Clase para tachar el texto de las tareas vencidas */
 .task-expired {
     text-decoration: line-through;
-    color: #888; /* Color gris para las tareas vencidas */
+    color: #888;
 }
 
