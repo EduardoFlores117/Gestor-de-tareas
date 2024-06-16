@@ -1,0 +1,71 @@
+@import "node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+html body {
+    background-color: #1F1F1F;
+}
+
+#task-list, #search-results {
+    max-height: 290px;
+    overflow-y: auto;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.list-group-item.task-pending {
+    background-color: white;
+}
+
+.list-group-item.task-overdue {
+    background-color: #f8d7da;
+}
+
+.list-group-item.task-completed {
+    background-color: #d4edda;
+}
+
+.list-group-item .btn {
+    margin-left: 10px;
+}
+
+.text-center {
+    color: white;
+}
+
+.card-body {
+    background-color: #292929;
+    border-color: #292929;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(70%) saturate(500%) hue-rotate(0deg) brightness(90%) contrast(80%);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1F1F1F; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #656a70; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; 
+}
+
+/* Clase para tachar el texto de las tareas vencidas */
+.task-expired {
+    text-decoration: line-through;
+    color: #888; /* Color gris para las tareas vencidas */
+}
+
