@@ -14,7 +14,7 @@ $(document).ready(function() {
     }
 
     function saveTask(task) {
-        console.log('Guardando tarea:', task); // Log para verificar que la tarea se está guardando
+        console.log('Guardando tarea:', task); 
         const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
         tasks.push(task);
         localStorage.setItem('tasks', JSON.stringify(tasks));
@@ -61,7 +61,7 @@ $(document).ready(function() {
         const endDate = $('#task-end-date').val();
         const responsible = $('#task-responsible').val();
 
-        console.log('Datos del formulario:', { name, startDate, endDate, responsible }); // Log para verificar los datos del formulario
+        console.log('Datos del formulario:', { name, startDate, endDate, responsible }); 
 
         if (endDate < startDate) {
             showMessage('danger', 'La fecha de fin no puede ser menor a la fecha de inicio.');
@@ -114,7 +114,7 @@ $(document).ready(function() {
     });
 
     function searchTasks(searchTerm) {
-        searchResults.empty(); // Clear previous search results
+        searchResults.empty();
         if (searchTerm) {
             const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
             const filteredTasks = tasks.filter(task => task.name.toLowerCase().includes(searchTerm));
