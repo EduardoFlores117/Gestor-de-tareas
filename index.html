@@ -13,7 +13,7 @@
 <body>
     <div class="container mt-5">
         <h1 class="text-center">Gestor de Tareas</h1>
-        <div class="card mt-4" style="border: none; background-color:#1F1F1F; ">
+        <div class="card mt-4" style="border: none; background-color:#1F1F1F;">
             <div class="card-body" style="border-radius: 10px;">
                 <h5 class="card-title" style="color: white;">Añadir Nueva Tarea</h5>
                 <form id="task-form">
@@ -44,17 +44,15 @@
             <button class="btn btn-outline-secondary" type="button" id="search-button"><i class="bi bi-search"></i></button>
         </div>
         <h5 class="mt-4" style="color: #D6D6D6;">Lista de Tareas</h5>
-        <ul class="list-group mt-2" id="task-list">
-        </ul>
+        <ul class="list-group mt-2" id="task-list"></ul>
 
         <h5 class="mt-4" style="color: #D6D6D6;">Resultados de Búsqueda</h5>
-        <ul class="list-group mt-2" style="margin-bottom: 15px" id="search-results">
-        </ul>
+        <ul class="list-group mt-2" style="margin-bottom: 15px" id="search-results"></ul>
     </div>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
