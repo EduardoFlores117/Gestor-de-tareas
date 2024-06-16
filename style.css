@@ -1,4 +1,4 @@
-@import "node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css');
 
 html body {
     background-color: #1F1F1F;
@@ -65,6 +65,5 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .task-expired {
     text-decoration: line-through;
-    color: #888;
+    color: #888; 
 }
-
